@@ -1,0 +1,13 @@
+.btn-info {
+    display: inline-block;
+    background-color: rgba(170, 177, 255, 0.3);
+    border: 1px solid #AAB1FF;
+    margin: 35px 10px 0px 0px;
+    padding: 15px 25px;
+    color: #ffffff;
+    border-radius: 25px;
+}
+
+.btn-info:hover {
+    background-color: #AAB1FF;
+}
