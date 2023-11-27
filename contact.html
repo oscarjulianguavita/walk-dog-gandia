@@ -1,26 +1,98 @@
 <main>
-  <div class="card mb-3">
-    <img
-      src="../images/pages/services-imagen-paseando-perros.jpg"
-      class="card-img-top"
-      alt="..."
-    />
-    <div class="card-body">
-      <h5 class="card-title">Contacto</h5>
-      <p class="card-text">
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </p>
-      <p class="card-text">
-        <small class="text-body-secondary">Last updated 3 mins ago</small>
-      </p>
+
+  <div class="container-contact m-3">
+
+    <!-- card contacto -->
+    <div class="card mb-3" style="width: 100%; padding: 5%;" >
+      <img src="../images/pages/services-imagen-paseando-perros.jpg" class="card-img-top" alt="..."  />
+      <div class="card-body">
+        <h5 class="card-title">Contacto</h5>
+        <p class="card-text">
+          Puedes contactarnos al 2773742 
+        </p>
+        
+      </div>
     </div>
+
+    <!-- formulario -->
+    <form class="row g-3 m-3">
+      <div class="col-md-4">
+        <label for="validationServer01" class="form-label">Nombre</label>
+        <input type="text" class="form-control is-valid" id="validationServer01" value="Tú nombre" required>
+        <div class="valid-feedback">
+          Válido
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationServer02" class="form-label">Apellido</label>
+        <input type="text" class="form-control is-valid" id="validationServer02" value="Tú Apellido" required>
+        <div class="valid-feedback">
+          Válido
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationServerUsername" class="form-label">Email</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend3">@</span>
+          <input type="text" class="form-control is-invalid" id="validationServerUsername"
+            aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+          <div id="validationServerUsernameFeedback" class="invalid-feedback">
+            Por favor, elija un nombre de usuario.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationServer03" class="form-label">Ciudad</label>
+        <input type="text" class="form-control is-invalid" id="validationServer03"
+          aria-describedby="validationServer03Feedback" required>
+        <div id="validationServer03Feedback" class="invalid-feedback">
+          Por favor, proporcione una ciudad válida.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationServer04" class="form-label">Provincia</label>
+        <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback"
+          required>
+          <option selected disabled value="">Selecciona tu provincia...</option>
+      
+          <option value="1">Valencia</option>
+          <option value="2">Barcelona</option>
+          <option value="3">Madrid</option>
+        </select>
+        <div id="validationServer04Feedback" class="invalid-feedback">
+          Seleccione un estado válido.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationServer05" class="form-label">Codigo Postal</label>
+        <input type="text" class="form-control is-invalid" id="validationServer05"
+          aria-describedby="validationServer05Feedback" required>
+        <div id="validationServer05Feedback" class="invalid-feedback">
+          Proporcione un código postal válido.
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
+            aria-describedby="invalidCheck3Feedback" required>
+          <label class="form-check-label" for="invalidCheck3">
+            Acepte los términos y condiciones
+          </label>
+          <div id="invalidCheck3Feedback" class="invalid-feedback">
+            Debe estar de acuerdo antes de enviarlo.
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </div>
+    </form>
+
   </div>
 </main>
 
 <!-- Agrega los scripts de Bootstrap al final del body para un mejor rendimiento -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 <script src="include.js"></script>
